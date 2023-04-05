@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-  },
+    "export": "next export"  
+},
   "dependencies": {
     "ethers": "^6.2.3",
     "next": "13.2.4",

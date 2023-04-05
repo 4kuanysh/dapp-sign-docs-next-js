@@ -1,6 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  exportTrailingSlash: true,
+  disableStaticImages: true,
+  exportPathMap: function() {
+    return {
+      '/': {page: '/'}
+    };
+  },
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+};
